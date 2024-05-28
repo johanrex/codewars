@@ -31,7 +31,8 @@ def recoverSecret(triplets):
     return "".join(items)
 
 
-secret = "whatisup"
-triplets = [["t", "u", "p"], ["w", "h", "i"], ["t", "s", "u"], ["a", "t", "s"], ["h", "a", "p"], ["t", "i", "s"], ["w", "h", "s"]]
+if __name__ == "__main__":
+    secret = "whatisup"
+    triplets = [["t", "u", "p"], ["w", "h", "i"], ["t", "s", "u"], ["a", "t", "s"], ["h", "a", "p"], ["t", "i", "s"], ["w", "h", "s"]]
 
-assert recoverSecret(triplets) == secret
+    assert recoverSecret(triplets) == secret
